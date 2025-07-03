@@ -94,10 +94,6 @@ body {
     border: 0; /* Quita el borde por defecto del iframe */
 }
 
-
-
-
-
 /* --- Media Queries para Responsividad (aplicando BEM si es necesario) --- */
 
 @media (max-width: 768px) {
@@ -159,12 +155,11 @@ body {
 }
 
 label {
-    color: #020c24;
-    background-color: #3798b9; /* Color celeste claro para el fondo */
+    color: white;
+    background-color: #260574; /* Color celeste claro para el fondo */
     padding: 3px 6px; /* Opcional: Añade un poco de espacio alrededor del texto */
     border-radius: 4px; /* Opcional: Bordes ligeramente redondeados */
     display: inline-block; /* Importante para que el background se ajuste al contenido */
-    font-weight: bold;
 }    
 
 /* --- Bloque: Footer --- */
