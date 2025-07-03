@@ -24,7 +24,7 @@ body {
     color: #333;
     background-image: url(https://st.depositphotos.com/1000970/4216/i/450/depositphotos_42166419-stock-photo-a-white-sand-bottom-in.jpg);
     background-size: cover;
-    
+
 }
 
 
@@ -73,6 +73,29 @@ body {
     text-align: justify;
 }
 
+/* --- Responsividad para Videos de YouTube --- */
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 (altura / ancho = 9 / 16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%; /* Asegura que no desborde el contenedor padre */
+    background-color: #000; /* Fondo negro mientras carga el video */
+    border-radius: 6px; /* Para que coincida con el estilo de la imagen anterior */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Quita el borde por defecto del iframe */
+}
+
+
+
 /* --- Bloque: Footer --- */
 .footer {
     background-color: #333;
@@ -119,24 +142,14 @@ body {
 }
 
 .galeria__titulo {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: rgb(14, 6, 115);
+    font-weight: bold;
+    background-color: #37b9b9; /* Color celeste claro para el fondo */
+    padding: 3px 6px; /* Opcional: Añade un poco de espacio alrededor del texto */
+    border-radius: 4px; /* Opcional: Bordes ligeramente redondeados */
 }
-
-.galeria__imagen {
-  width: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease-in-out;
-}
-
-.galeria__imagen:hover {
-  transform: scale(1.05);
-}
-
-.galeria__imagen--destacada {
-  border: 3px solid #e67e22;
-}
-
 
 .form {
     background-image: url(https://img.freepik.com/premium-photo/bioluminescent-creatures-deep-sea_1012729-3730.jpg);
@@ -157,7 +170,13 @@ body {
 }
 
 label {
-    color: #f4f4f4;
-}
+    color: #020c24;
+    background-color: #3798b9; /* Color celeste claro para el fondo */
+    padding: 3px 6px; /* Opcional: Añade un poco de espacio alrededor del texto */
+    border-radius: 4px; /* Opcional: Bordes ligeramente redondeados */
+    display: inline-block; /* Importante para que el background se ajuste al contenido */
+    font-weight: bold;
+}    
+
 
 
