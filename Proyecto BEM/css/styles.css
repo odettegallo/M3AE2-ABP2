@@ -1,10 +1,16 @@
 .header__logo-img {
   height: auto;
   width: 45px;
+  border-radius: 50%;
+}
+
+.header__title {
+    color: #0056b3;
+    font-weight: bold;
 }
 
 .menu__item .nav-link {
-  color: #e10f89;
+  color: #7c149b;
   font-weight: 500;
 }
 
@@ -16,6 +22,9 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    background-image: url(https://st.depositphotos.com/1000970/4216/i/450/depositphotos_42166419-stock-photo-a-white-sand-bottom-in.jpg);
+    background-size: cover;
+    
 }
 
 
@@ -128,5 +137,27 @@ body {
   border: 3px solid #e67e22;
 }
 
+
+.form {
+    background-image: url(https://img.freepik.com/premium-photo/bioluminescent-creatures-deep-sea_1012729-3730.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+
+}
+
+.form__titulo {
+    color: aquamarine;
+    
+}
+
+label {
+    color: #f4f4f4;
+}
 
 
