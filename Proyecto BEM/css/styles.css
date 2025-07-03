@@ -1,8 +1,106 @@
 .header__logo-img {
-  height: 50px;
+  height: auto;
+  width: 45px;
 }
 
 .menu__item .nav-link {
-  color: #333;
+  color: #e10f89;
   font-weight: 500;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+
+/* --- Bloque: Main Content --- */
+.main-content {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: calc(100vh - 120px); /* Ajustar según la altura de header/footer */
+    box-sizing: border-box;
+}
+
+/* --- Bloque: Article --- */
+.article {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.article__title { /* Elemento: article__title */
+    color: #0056b3;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.article__image { /* Elemento: article__image */
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article__paragraph { /* Elemento: article__paragraph */
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+    text-align: justify;
+}
+
+/* --- Bloque: Footer --- */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+
+.footer__text { /* Elemento: footer__text */
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+}
+
+/* --- Media Queries para Responsividad (aplicando BEM si es necesario) --- */
+
+@media (max-width: 768px) {
+    .article { /* Estilos para el bloque Article en pantallas medianas */
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .article__title { /* Estilos para el elemento title del bloque Article */
+        font-size: 2em;
+    }
+
+    .article__paragraph { /* Estilos para el elemento paragraph del bloque Article */
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .article { /* Estilos para el bloque Article en pantallas pequeñas */
+        padding: 15px;
+        margin: 5px;
+    }
+
+    .article__title { /* Estilos para el elemento title del bloque Article */
+        font-size: 1.8em;
+    }
 }
