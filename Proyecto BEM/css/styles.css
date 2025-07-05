@@ -81,7 +81,7 @@ body {
     height: 0;
     overflow: hidden;
     max-width: 100%; /* Asegura que no desborde el contenedor padre */
-    background-color: #000; /* Fondo negro mientras carga el video */
+    background-color: #0f0b91; /* Fondo negro mientras carga el video */
     border-radius: 6px; /* Para que coincida con el estilo de la imagen anterior */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
 }
