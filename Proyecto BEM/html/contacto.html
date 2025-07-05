@@ -34,22 +34,22 @@
             <div class="mb-3">
                 <label for="name" class="form__label">Nombre:</label>
                 <input type="text" id="name" name="name" class="form-control" required>
-                <span class="text-danger" id="errorName"></span>
+                <span class="text-warning bg-dark" id="errorName"></span>
             </div>
             <div class="mb-3">
                 <label for="phone" class="form__label">Teléfono:</label>
                 <input type="number" id="phone" name="phone" class="form-control" required>
-                <span class="text-danger" id="errorPhone"></span>
+                <span class="text-warning bg-dark" id="errorPhone"></span>
             <div class="mb-3">
                 <label for="email" class="form__label">Correo electrónico:</label>
                 <input type="email" id="email" name="email" class="form-control" required>
-                <span class="text-danger" id="errorEmail"></span>
+                <span class="text-warning bg-dark" id="errorEmail"></span>
             </div>
             <div class="mb-3">
                 <label for="message" class="form__label">Mensaje:</label>
                 <textarea id="message" name="message" rows="4" class="form-control" 
                 required></textarea>
-                <span class="text-danger" id="errorMessage"></span>
+                <span class="text-warning bg-dark" id="errorMessage"></span>
             </div>
             <button onclick="validar()" type="submit" class="btn btn-primary w-100">Enviar</button>
         </form>
