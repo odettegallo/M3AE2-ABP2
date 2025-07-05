@@ -9,9 +9,10 @@
     font-weight: bold;
 }
 
-.menu__item .nav-link {
+.header__menu--item .nav-link {
   color: #7c149b;
   font-weight: 500;
+  font-size: large;
 }
 
 /* Estilos generales */
