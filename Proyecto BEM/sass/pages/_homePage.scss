@@ -1,0 +1,121 @@
+// _layout.scss (usa @use si estás modularizando tu proyecto)
+
+@use '../abstracts/variables' as *;
+
+html, body {
+  height: 100%;
+  min-height: 100vh;
+  display: $flex-default;
+  flex-direction: column;
+}
+
+.main--content {
+  display: $flex-default;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: $padding-base $padding-horizontal;
+}
+
+.contenido__minimalist {
+  display: $flex-default;
+  padding: 16px;
+  flex-direction: column;
+  align-items: $align-start;
+  flex: $flex-grow-shrink;
+  align-self: stretch;
+}
+
+#minimalist__img {
+  height: 480px;
+  min-height: 480px;
+  align-self: stretch;
+  border-radius: $border-radius-base;
+  background: 
+    linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.40)),
+    url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+h2 {
+  align-self: stretch;
+  color: $color-primary;
+  font-feature-settings: 'dlig' on;
+  font-family: $font-main;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.seccion__titulo {
+  display: $flex-default;
+  height: 60px;
+  padding: 20px 16px 12px;
+  flex-direction: column;
+  align-items: $align-start;
+  align-self: stretch;
+}
+
+h3 {
+  align-self: stretch;
+  color: $color-primary;
+  font-feature-settings: 'dlig' on;
+  font-family: $font-main;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: start;
+}
+
+p {
+  align-self: stretch;
+  color: $color-secondary;
+  font-feature-settings: 'dlig' on;
+  font-family: $font-main;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: start;
+}
+
+.section--productsycategories {
+  display: $flex-default;
+  padding: 16px;
+  align-items: $align-start;
+  gap: $gap-base;
+  flex: $flex-grow-shrink;
+
+  > div {
+    flex: 1 1 calc(33.33% - 8px);
+    max-width: calc(33.33% - 8px);
+    box-sizing: border-box;
+    display: $flex-default;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.product__img,
+.category__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: $border-radius-base;
+}
+
+.product__img {
+  height: 244px;
+  align-self: stretch;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.category__img {
+  height: 301px;
+  align-self: stretch;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
