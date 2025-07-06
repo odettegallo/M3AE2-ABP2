@@ -1,10 +1,13 @@
 @use "../sass/abstracts/variables";
 @use "../sass/abstracts/mixins";
 @use "../sass/abstracts/functions";
-@use "../sass/base/base";
-@use "../sass/components/components";
-@use "../sass/layout/layout";
+@use "../sass/base/reset";
+@use "../sass/base/typography";
+@use "../sass/components/buttons";
+@use "../sass/components/cards";
+@use "../sass/layout/header";
+@use "../sass/layout/footer";
 @use "../sass/pages/homePage";
-@use "../sass/themes/themes";
+@use "../sass/themes/colors";
 @use "../sass/vendors/vendors";
 
