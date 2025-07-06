@@ -29,13 +29,13 @@
 }
 
 .form {
-  padding: 2rem;
+  padding: 1rem;
 
   @include respond-to(sm) {
-    padding: 1.5rem;
+    padding: 0.5rem;
   }
 
   @include respond-to(xs) {
-    padding: 1rem;
+    padding: 0.1rem;
   }
 }
