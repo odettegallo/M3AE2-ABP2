@@ -6,8 +6,17 @@
 @use "../sass/components/buttons";
 @use "../sass/components/cards";
 @use "../sass/layout/header";
+@use "../sass/layout/main";
+@use "../sass/layout/article";
 @use "../sass/layout/footer";
 @use "../sass/pages/homePage";
 @use "../sass/themes/colors";
 @use "../sass/vendors/vendors";
 
+// @use 'variables' as *;
+
+// @use 'base';
+// @use 'header';
+// @use 'main-content';
+// @use 'article';
+// @use 'footer';

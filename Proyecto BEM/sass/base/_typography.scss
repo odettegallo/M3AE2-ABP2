@@ -1,0 +1,14 @@
+// _base.scss
+
+@use '../abstracts/variables' as *;
+
+body {
+  font-family: $font-family-main;
+  line-height: $line-height-base;
+  margin: 0;
+  padding: 0;
+  background-color: $color-gray;
+  color: $color-text;
+  background-image: url('https://st.depositphotos.com/1000970/4216/i/450/depositphotos_42166419-stock-photo-a-white-sand-bottom-in.jpg');
+  background-size: cover;
+}

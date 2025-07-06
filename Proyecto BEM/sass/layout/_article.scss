@@ -1,0 +1,58 @@
+// _article.scss
+
+@use '../abstracts/variables' as *;
+
+.article {
+  background-color: $color-white;
+  border-radius: $radius-medium;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-sizing: border-box;
+
+  &__title {
+    color: $color-blue;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: $radius-small;
+    margin-bottom: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__paragraph {
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+    text-align: justify;
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px;
+    margin: 10px;
+
+    &__title {
+      font-size: 2em;
+    }
+
+    &__paragraph {
+      font-size: 1em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 15px;
+    margin: 5px;
+
+    &__title {
+      font-size: 1.8em;
+    }
+  }
+}

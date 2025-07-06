@@ -1,0 +1,12 @@
+// _main-content.scss
+
+@use '../abstracts/variables' as *;
+
+.main-content {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 120px);
+  box-sizing: border-box;
+}

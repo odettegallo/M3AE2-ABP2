@@ -1,0 +1,24 @@
+// _header.scss
+
+@use '../abstracts/variables' as *;
+
+.header {
+  &__logo-img {
+    height: auto;
+    width: 45px;
+    border-radius: $radius-full;
+  }
+
+  &__title {
+    color: $color-blue;
+    font-weight: bold;
+  }
+
+  &__menu--item {
+    .nav-link {
+      color: $color-purple;
+      font-weight: 500;
+      font-size: large;
+    }
+  }
+}

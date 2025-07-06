@@ -1,115 +1,106 @@
-html, body {
-  height: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  background-image: url("https://st.depositphotos.com/1000970/4216/i/450/depositphotos_42166419-stock-photo-a-white-sand-bottom-in.jpg");
+  background-size: cover;
 }
 
-.main--content {
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px 160px;
+.header__logo-img {
+  height: auto;
+  width: 45px;
+  border-radius: 50%;
 }
-
-.contenido__minimalist {
-  display: flex;
-  padding: 16px;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 1 0 0;
-  align-self: stretch;
+.header__title {
+  color: #0056b3;
+  font-weight: bold;
 }
-
-#minimalist__img {
-  height: 480px;
-  min-height: 480px;
-  align-self: stretch;
-  border-radius: 8px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(<path-to-image>) lightgray 50%/cover no-repeat;
-}
-
-h2 {
-  align-self: stretch;
-  color: #171212;
-  font-feature-settings: "dlig" on;
-  font-family: "Plus Jakarta Sans";
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 28px;
-}
-
-.seccion__titulo {
-  display: flex;
-  height: 60px;
-  padding: 20px 16px 12px;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-}
-
-h3 {
-  align-self: stretch;
-  color: #171212;
-  font-feature-settings: "dlig" on;
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-style: normal;
+.header__menu--item .nav-link {
+  color: #7c149b;
   font-weight: 500;
-  line-height: 24px;
-  text-align: start;
+  font-size: large;
 }
 
-p {
-  align-self: stretch;
-  color: #876363;
-  font-feature-settings: "dlig" on;
-  font-family: "Plus Jakarta Sans";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-  text-align: start;
-}
-
-.section--productsycategories {
+.main-content {
+  padding: 20px;
   display: flex;
-  padding: 16px;
+  justify-content: center;
   align-items: flex-start;
-  gap: 12px;
-  flex: 1 0 0;
-}
-.section--productsycategories > div {
-  flex: 1 1 calc(33.33% - 8px);
-  max-width: calc(33.33% - 8px);
+  min-height: calc(100vh - 120px);
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.article {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+.article__title {
+  color: #0056b3;
+  font-size: 2.5em;
+  margin-bottom: 25px;
   text-align: center;
 }
-
-.product__img,
-.category__img {
-  width: 100%;
+.article__image {
+  max-width: 100%;
   height: auto;
-  object-fit: cover;
-  border-radius: 8px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article__paragraph {
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+  text-align: justify;
+}
+@media (max-width: 768px) {
+  .article {
+    padding: 20px;
+    margin: 10px;
+  }
+  .article__title {
+    font-size: 2em;
+  }
+  .article__paragraph {
+    font-size: 1em;
+  }
+}
+@media (max-width: 480px) {
+  .article {
+    padding: 15px;
+    margin: 5px;
+  }
+  .article__title {
+    font-size: 1.8em;
+  }
 }
 
-.product__img {
-  height: 244px;
-  align-self: stretch;
-  background: url(<path-to-image>) lightgray 50%/cover no-repeat;
+.footer {
+  background-color: #1d11a5;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 20px;
 }
-
-.category__img {
-  height: 301px;
-  align-self: stretch;
-  background: url(<path-to-image>) lightgray 50%/cover no-repeat;
+.footer__text {
+  margin: 0;
+}
+.footer__link {
+  color: turquoise;
+  text-decoration: none;
+  font-weight: bold;
+}
+.footer__link:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
