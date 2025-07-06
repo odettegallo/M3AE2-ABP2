@@ -1,0 +1,11 @@
+.form {
+  padding: 2rem;
+
+  @include respond-to(sm) {
+    padding: 1.5rem;
+  }
+
+  @include respond-to(xs) {
+    padding: 1rem;
+  }
+}

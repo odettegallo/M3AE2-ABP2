@@ -1,7 +1,29 @@
 // _variables.scss
+$color-title-nav: #b30071;
+$color-title-article: #0056b3;
+$color-nav-link: #7c149b;
+$color-article-bg: #ffffff;
+$color-footer-font: #ffffff;
+$color-body-bg: #f4f4f4;
+$color-body-text: #333;
+$color-footer-bg: #1d11a5;
+$color-footer-link: turquoise;
 
 $radius-full: 50%;
 $radius-medium: 8px;
 $radius-small: 6px;
 
 $line-height-base: 1.6;
+
+
+// variables form
+
+$color-form-bg: url("https://img.freepik.com/premium-photo/bioluminescent-creatures-deep-sea_1012729-3730.jpg");
+$color-label-bg: #260574;
+$color-label-text: white;
+$color-title: aquamarine;
+
+$radius-form: 10px;
+$radius-label: 4px;
+
+$box-shadow-form: 0 4px 8px rgba(0, 0, 0, 0.2);
