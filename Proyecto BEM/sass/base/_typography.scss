@@ -1,0 +1,8 @@
+// _base.scss
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/breakpoints' as *;
+@use '../abstracts/mixins' as *;
+@use '../themes/colors' as *;
+
+$font-family-main: 'Arial', sans-serif;

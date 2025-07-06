@@ -1,0 +1,41 @@
+
+@use '../abstracts/breakpoints' as *;
+@use '../abstracts/variables' as *;
+// @use '../abstracts/mixins' as *;
+@use '../themes/colors' as *;
+
+.form {
+  background-image: $color-form-bg;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: $radius-form;
+  box-shadow: $box-shadow-form;
+  max-width: 400px;
+  width: 100%;
+
+  &__titulo {
+    color: $color-title;
+  }
+
+  label {
+    color: $color-label-text;
+    background-color: $color-label-bg;
+    padding: 3px 6px;
+    border-radius: $radius-label;
+    display: inline-block;
+  }
+}
+
+.form {
+  padding: 2rem;
+
+  @include respond-to(sm) {
+    padding: 1.5rem;
+  }
+
+  @include respond-to(xs) {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,15 @@
+// _mixins.scss
+
+@use 'breakpoints' as *;
+
+@mixin respond-to($size) {
+  $value: map-get($breakpoints, $size);
+  @if $value {
+    @media (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "⚠️ El breakpoint '#{$size}' no está definido en el mapa.";
+  }
+}
+

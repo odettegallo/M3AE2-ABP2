@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script src="../js/script.js" async></script>
@@ -21,9 +22,9 @@
         </button>
             <nav class="header__menu collapse navbar-collapse" id="menuNav">
             <ul class="navbar-nav ms-auto">
-                <li class="menu__item nav-item"><a class="nav-link" href="../html/index.html">Inicio</a></li>
-                <li class="menu__item nav-item"><a class="nav-link" href="../html/catalogo.html">Catálogo</a></li>
-                <li class="menu__item nav-item"><a class="nav-link" href="../html/contacto.html">Contacto</a></li>
+                <li class="header__menu--item nav-item"><a class="nav-link" href="../html/index.html">Inicio</a></li>
+                <li class="header__menu--item nav-item"><a class="nav-link" href="../html/catalogo.html">Catálogo</a></li>
+                <li class="header__menu--item nav-item"><a class="nav-link" href="../html/contacto.html">Contacto</a></li>
             </ul>
             </nav>
         </div>
@@ -34,22 +35,22 @@
             <div class="mb-3">
                 <label for="name" class="form__label">Nombre:</label>
                 <input type="text" id="name" name="name" class="form-control" required>
-                <span class="text-danger" id="errorName"></span>
+                <span class="text-warning bg-dark" id="errorName"></span>
             </div>
             <div class="mb-3">
                 <label for="phone" class="form__label">Teléfono:</label>
                 <input type="number" id="phone" name="phone" class="form-control" required>
-                <span class="text-danger" id="errorPhone"></span>
+                <span class="text-warning bg-dark" id="errorPhone"></span>
             <div class="mb-3">
                 <label for="email" class="form__label">Correo electrónico:</label>
                 <input type="email" id="email" name="email" class="form-control" required>
-                <span class="text-danger" id="errorEmail"></span>
+                <span class="text-warning bg-dark" id="errorEmail"></span>
             </div>
             <div class="mb-3">
                 <label for="message" class="form__label">Mensaje:</label>
                 <textarea id="message" name="message" rows="4" class="form-control" 
                 required></textarea>
-                <span class="text-danger" id="errorMessage"></span>
+                <span class="text-warning bg-dark" id="errorMessage"></span>
             </div>
             <button onclick="validar()" type="submit" class="btn btn-primary w-100">Enviar</button>
         </form>
