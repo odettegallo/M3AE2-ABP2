@@ -1,6 +1,8 @@
 // _main-content.scss
 
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../themes/colors' as *;
 
 .main-content {
   padding: 20px;

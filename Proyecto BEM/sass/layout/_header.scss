@@ -1,6 +1,9 @@
 // _header.scss
 
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../themes/colors' as *;
+
 
 .header {
   &__logo-img {
@@ -10,13 +13,13 @@
   }
 
   &__title {
-    color: $color-blue;
+    color: $color-title;
     font-weight: bold;
   }
 
   &__menu--item {
     .nav-link {
-      color: $color-purple;
+      color: $color-nav-link;
       font-weight: 500;
       font-size: large;
     }

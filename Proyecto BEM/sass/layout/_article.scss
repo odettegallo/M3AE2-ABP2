@@ -1,9 +1,13 @@
 // _article.scss
 
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../themes/colors' as *;
+
+
 
 .article {
-  background-color: $color-white;
+  background-color: $color-article-bg;
   border-radius: $radius-medium;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -12,7 +16,7 @@
   box-sizing: border-box;
 
   &__title {
-    color: $color-blue;
+    color: $color-title;
     font-size: 2.5em;
     margin-bottom: 25px;
     text-align: center;

@@ -1,10 +1,12 @@
 // _footer.scss
 
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../themes/colors' as *;
 
 .footer {
   background-color: $color-footer-bg;
-  color: $color-white;
+  color: $color-footer-font;
   text-align: center;
   padding: 1rem 0;
   margin-top: 20px;
