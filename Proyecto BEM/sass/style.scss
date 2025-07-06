@@ -1,10 +1,12 @@
 @use "../sass/abstracts/variables";
+@use "../sass/abstracts/breakpoints";
 @use "../sass/abstracts/mixins";
 @use "../sass/abstracts/functions";
 @use "../sass/base/reset";
 @use "../sass/base/typography";
 @use "../sass/components/buttons";
 @use "../sass/components/cards";
+@use "../sass/components/form";
 @use "../sass/layout/header";
 @use "../sass/layout/main";
 @use "../sass/layout/article";
